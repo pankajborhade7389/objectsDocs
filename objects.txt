@@ -11,28 +11,7 @@ v] Service
 
 Following are the key objects which exist in the Kubernetes:
 
-**Pod
-
-It is the smallest and simplest basic unit of the Kubernetes application. This object indicates the processes which are running in the cluster.
-
-**Node
-
-A node is nothing but a single host, which is used to run the virtual or physical machines. A node in the Kubernetes cluster is also known as a minion.
-
-**Service
-
-A service in a Kubernetes is a logical set of pods, which works together. With the help of services, users can easily manage load balancing configurations.
-
-**ReplicaSet
-
-A ReplicaSet in the Kubernetes is used to identify the particular number of pod replicas are running at a given time. It replaces the replication controller because it is more powerful and allows a user to use the "set-based" label selector.
-
-**Namespace
-
-Kubernetes supports various virtual clusters, which are known as namespaces. It is a way of dividing the cluster resources between two or more users.
-
-
-**NameSpace:
+**NameSpace:-
    -  Namespace is like a package name, Logical partionaning of the kubernities cluster is said to be Namespace.
    -  Namespaces are a way to organize clusters into virtual sub-clusters
    -  Any resource that exists within Kubernetes exists either in the default namespace or a namespace that is created by the cluster operator
@@ -45,22 +24,25 @@ Kubernetes supports various virtual clusters, which are known as namespaces. It 
    -  To delete Namespace - kubectl delete namespaces <insert-some-namespace-name>
    -  Attaching the link for my reference - https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 
-**PODS
+**PODS:-
    -  Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
    -  A Pod is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
    -  A Pod is similar to a set of containers with shared namespaces and shared filesystem volumes
    -  To Create a POD , kubectl apply -f https://k8s.io/examples/pods/simple-pod.yaml
    -  Link for reference - https://kubernetes.io/docs/concepts/workloads/pods/
 
-**Replica Set
+**Replica Set:-
    -  A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time.
    -  Commands which are listed to operate on Replica set
    -  https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 
-Deployment
+**Deployment:-
    -  A Deployment provides declarative updates for Pods and ReplicaSets.
    -  We can create a deployment by using following command , kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml
    -  To check if the deployed or not , use the below command kubectl get deployments
    -  To get deployment roll out status- kubectl rollout status deployment/nginx-deployment
    -  Attaching the link which includes all the command and also the commands if we get any error,
    -  https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+   
+   **Service:- 
+     - A service in a Kubernetes is a logical set of pods, which works together. With the help of services, users can easily manage load balancing configurations.
