@@ -1,11 +1,11 @@
-Topic: Kubernetes Object Model
+Ks*8 Object Model
 
-The Kubernetes Platform contains control over the resources related to Storage and Compute
+The Kubernetes Platform contains control over the resources related to Storage and Compute.
 
 List of five types of Object model:
 i] Namespace
 ii] POD
-iii] Replicaset
+iii] Replica set
 iv] Deployment
 v] Service
 
@@ -43,6 +43,6 @@ Following are the key objects which exist in the Kubernetes:
    -  To get deployment roll out status- kubectl rollout status deployment/nginx-deployment
    -  Attaching the link which includes all the command and also the commands if we get any error,
    -  https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
-   
-   **Service:- 
-     - A service in a Kubernetes is a logical set of pods, which works together. With the help of services, users can easily manage load balancing configurations.
+
+**Service:- 
+   - Service An abstract way to expose an application running on a set of Pods as a network service. With Kubernetes you don't need to modify your application to use      - an unfamiliar service discovery mechanism. Kubernetes gives Pods their own IP addresses and a single DNS name for a set of Pods, and can load-balance across them.
